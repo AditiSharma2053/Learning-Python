@@ -1,10 +1,11 @@
+import time
+import webbrowser as web
 while True:
     print()
     print ("Would you like to find a song (Yes/No)?")
     Answer = input ("Answer: ").upper()
     print()
     if Answer == "NO":
-        import time
         print ("Thank You for using my app" )
         time.sleep(1)
         print ("Closing in...")
@@ -25,13 +26,12 @@ while True:
             if answer_a == "YES":
                 Artist = input ("Enter artist name: ").capitalize()
                 so_ar = Song + " by " + Artist
-                import webbrowser
-                webbrowser.open (f'https://www.youtube.com/results?search_query={so_ar}')
+                web.open (f'https://www.youtube.com/results?search_query={so_ar}')
                 print ()
                 print ("The song '" + Song + "'" + " by " + Artist + " has been searched in your browser.")
                 break
             elif answer_a == "NO":
-                webbrowser.open (f'https://www.youtube.com/results?search_query={Song}')
+                web.open (f'https://www.youtube.com/results?search_query={Song}')
                 print ()
                 print ("The song '" + Song  + "' has been searched in your browser.")
                 break
