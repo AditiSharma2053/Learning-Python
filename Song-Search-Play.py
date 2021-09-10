@@ -1,10 +1,12 @@
+import time
+import webbrowser as web
+import pywhatkit as kit
 while True:                                           #Program loop started
     print()
     print ("Would you like to find a song (Y/N)?")
     Answer = input ("Answer: ").upper()
     print()
     if Answer == "N":
-        import time
         print ("Thank you for using this program" )
         time.sleep(1)
         print ("Closing in...")
@@ -36,12 +38,10 @@ while True:                                           #Program loop started
             answer_b = input ("Answer: ").upper()
             print ()
             if answer_b == "N":
-                import webbrowser
-                webbrowser.open (f'https://www.youtube.com/results?search_query={Song}')
+                web.open (f'https://www.youtube.com/results?search_query={Song}')
                 print ("The song " + Song + " has been searched in your browser.")
                 break
             elif answer_b == "Y":
-                import pywhatkit as kit
                 kit.playonyt (Song)
                 print ("The song " + Song + " is playing in your browser.")
                 print ("There may be an ad first. Sorry I cannot skip it for you...yet.")
