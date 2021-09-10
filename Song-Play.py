@@ -1,11 +1,11 @@
 import pywhatkit as kit
+import time
 while True:
     print()
     print ("Would you like to find and play a song (Yes/No)?")
     Answer = input ("Answer: ").upper()
     print()
     if Answer == "NO":
-        import time
         print ("Thank You for using my app" )
         time.sleep(1)
         print ("Closing in...")
