@@ -1,7 +1,10 @@
+#Modules Imported
 import time
 import webbrowser as web
 import pywhatkit as kit
-while True:                                           #Program loop started
+
+#Program loop started
+while True:                                           
     print()
     print ("Would you like to find a song (Y/N)?")
     Answer = input ("Answer: ").upper()
